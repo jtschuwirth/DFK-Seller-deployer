@@ -42,7 +42,7 @@ def handler(event, context):
         client.invoke(
             FunctionName='dfk-seller',
             InvocationType='Event',
-            Payload= json.dumps({"users": account_group})
+            Payload= json.dumps({"accounts": account_group})
         )
 
 
